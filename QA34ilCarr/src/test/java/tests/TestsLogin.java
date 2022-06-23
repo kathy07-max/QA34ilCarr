@@ -10,7 +10,7 @@ public class TestsLogin extends BaseTests{
         openLoginForm();
         fillLoginForm("katermax07@mail.ru","Rr020985$");
         submitLogin();
-        assertMethod(By.xpath("//*[text()='Logged in success']"));
+        assertTestSuccess(By.xpath("//*[text()='Logged in success']"));
 
     }
 
@@ -19,6 +19,6 @@ public class TestsLogin extends BaseTests{
         openLoginForm();
         fillLoginForm("katermax06@mail.ru","Rr020985$");
         submitLogin();
-        assertMethod(By.xpath("//*[text()='Wrong email or password']"));
+        assertTestSuccess(By.xpath("//*[text()='Wrong email or password']"));
     }
 }

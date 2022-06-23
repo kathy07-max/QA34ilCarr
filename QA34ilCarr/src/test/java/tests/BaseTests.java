@@ -47,7 +47,7 @@ public class BaseTests {
         wd.findElement(By.xpath("//button[@type='submit']")).click();
 
     }
-    public boolean assertMethod(By locator){
+    public boolean assertTestSuccess(By locator){
         return  wd.findElement(locator).isDisplayed();
 
     }
