@@ -1,5 +1,6 @@
 package tests;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 public class TestsLogin extends BaseTests{
@@ -9,6 +10,8 @@ public class TestsLogin extends BaseTests{
         openLoginForm();
         fillLoginForm("katermax07@mail.ru","Rr020985$");
         submitLogin();
+        assertMethod(By.xpath("//*[text()='Logged in success']"));
+
     }
 
     @Test
@@ -16,5 +19,6 @@ public class TestsLogin extends BaseTests{
         openLoginForm();
         fillLoginForm("katermax06@mail.ru","Rr020985$");
         submitLogin();
+        assertMethod(By.xpath("//*[text()='Wrong email or password']"));
     }
 }
