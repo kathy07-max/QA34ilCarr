@@ -1,12 +1,16 @@
 package tests;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 public class TestsLogin extends BaseTests{
 
-    @BeforeMethod
+    @BeforeTest
     public void preCondition(){
         if(appManager.getUserHelper().isLogged())
         {
@@ -17,14 +21,16 @@ public class TestsLogin extends BaseTests{
     public void loginSuccess(){
         appManager.getUserHelper().openLoginForm();
         appManager.getUserHelper().fillLoginForm("katermax07@mail.ru","Rr020985$");
-        appManager.getUserHelper().submitLogin();
+        appManager.getUserHelper().submit();
+        Assert.assertEquals(appManager.getMessage(),"");
         appManager.getUserHelper().click(By.xpath("//*[@type='button']"));
+
     }
 
     @Test
-    public void loginUnsuccessInvalidPassword(){
+    public void loginSuccessInvalidPassword(){
        appManager.getUserHelper().openLoginForm();
-       appManager.getUserHelper().fillLoginForm("katermax06@mail.ru","Rr020985");
-       appManager.getUserHelper().submitLogin();
+       appManager.getUserHelper().fillLoginForm("katermax07@mail.ru","Rr020985");
+       appManager.getUserHelper().submit();
     }
 }

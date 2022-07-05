@@ -14,8 +14,8 @@ public class BaseTests {
     public void setUp(){
         appManager.init();
        }
-   @AfterSuite
-   public void tearDown() {
-     appManager.stop();
-    }
+  // @AfterSuite
+   ///public void tearDown() {
+     //appManager.stop();
+    //}
 }

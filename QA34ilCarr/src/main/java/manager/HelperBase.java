@@ -21,4 +21,8 @@ public class HelperBase {
     public void click(By locator){
         wd.findElement(locator).click();
     }
+    public void submit(){
+        wd.findElement(By.xpath("//button[@type='submit']")).click();
+
+    }
 }
