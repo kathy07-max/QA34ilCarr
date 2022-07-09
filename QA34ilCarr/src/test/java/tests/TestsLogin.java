@@ -2,6 +2,7 @@ package tests;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -10,7 +11,7 @@ import java.time.Duration;
 
 public class TestsLogin extends BaseTests{
 
-    @BeforeTest
+    @BeforeMethod
     public void preCondition(){
         if(appManager.getUserHelper().isLogged())
         {
@@ -22,15 +23,17 @@ public class TestsLogin extends BaseTests{
         appManager.getUserHelper().openLoginForm();
         appManager.getUserHelper().fillLoginForm("katermax07@mail.ru","Rr020985$");
         appManager.getUserHelper().submit();
-        Assert.assertEquals(appManager.getMessage(),"");
-        appManager.getUserHelper().click(By.xpath("//*[@type='button']"));
-
+        Assert.assertEquals(appManager.getUserHelper().getMessage(),"Logged in");
     }
-
     @Test
-    public void loginSuccessInvalidPassword(){
-       appManager.getUserHelper().openLoginForm();
-       appManager.getUserHelper().fillLoginForm("katermax07@mail.ru","Rr020985");
-       appManager.getUserHelper().submit();
+    public void loginSuccess2(){
+        appManager.getUserHelper().openLoginForm();
+        appManager.getUserHelper().fillLoginForm("katermax07@mail.ru","Rr020985$");
+        appManager.getUserHelper().submit();
+        Assert.assertEquals(appManager.getUserHelper().getMessage(),"Logged in");
     }
+@AfterMethod
+    public void postCondition(){
+    appManager.getUserHelper().clickOk();
+}
 }
