@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.RegistrationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-07-09T19:13:53" hostname="LAPTOP-S8MI6IBE" time="6.683">
-  <properties/>
-  <testcase name="registrationSuccess" classname="tests.RegistrationTests" time="2.824"/>
-  <testcase name="registrationSuccess2" classname="tests.RegistrationTests" time="2.764"/>
-  <testcase name="registrationWrongPasswordFormat" classname="tests.RegistrationTests" time="0.73"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -28,8 +28,10 @@ public class UserHelper extends HelperBase {
         type(By.xpath("//input[@id='password']"),password);
     }
 
-
-
+    public void fillLoginForm(User user){
+        type(By.id("email"), user.getEmail());
+        type(By.id("password"), user.getPassword());
+    }
     public boolean isLogged() {
 
         return isElementPresent(By.xpath("//a[text()=' Logout ']"));
@@ -92,5 +94,11 @@ public class UserHelper extends HelperBase {
 
         boolean enabled = wd.findElement(By.cssSelector("[type=submit]")).isEnabled();
         return disabled&&!enabled;
+    }
+    public void login(User user) {
+        openLoginForm();
+        fillLoginForm(user);
+        submit();
+        clickOk();
     }
 }
