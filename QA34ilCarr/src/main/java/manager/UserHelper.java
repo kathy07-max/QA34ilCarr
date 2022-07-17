@@ -25,7 +25,10 @@ public class UserHelper extends HelperBase {
 
     public void fillLoginForm(String email, String password){
         type(By.xpath("//input[@id='email']"),email);
+        takeScreenShots("C:\\Users\\97254\\DocQA34\\GitHub\\QA34ilCarr\\QA34ilCarr\\src\\test\\screenshots\\screen1.jpeg");
         type(By.xpath("//input[@id='password']"),password);
+
+        takeScreenShots("C:\\Users\\97254\\DocQA34\\GitHub\\QA34ilCarr\\QA34ilCarr\\src\\test\\screenshots\\screen1.jpeg");
     }
 
     public void fillLoginForm(User user){
@@ -73,6 +76,7 @@ public class UserHelper extends HelperBase {
         pause(2000);
         new WebDriverWait(wd,Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector("div.dialog-container"))));
         String message = wd.findElement(By.cssSelector("div.dialog-container h1")).getText();
+        logger.info("Message is: "+ message);
         return message;
     }
 
@@ -80,6 +84,7 @@ public class UserHelper extends HelperBase {
         Boolean lastChild = new WebDriverWait(wd, Duration.ofSeconds(5))
                 .until(ExpectedConditions
                         .textToBePresentInElement(wd.findElement(By.cssSelector("div.error div:last-child")),"Password must contain 1 uppercase letter, 1 lowercase letter and one number"));
+
         return lastChild;
     }
 

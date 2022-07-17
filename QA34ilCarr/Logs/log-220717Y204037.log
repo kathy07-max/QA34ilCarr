@@ -1,0 +1,17 @@
+20:40:40.395 INFO  manager.ApplicationManager - All tests run in chrome browser
+20:40:43.690 INFO  manager.ApplicationManager - Current Url___>https://ilcarro-1578153671498.web.app/search
+20:40:43.713 INFO  tests.BaseTests - Started method with name: public void tests.SearchTests.searchCurrentMonth()
+20:40:43.715 INFO  manager.MyListener - WebDriver start element --> By.id: city
+20:40:43.739 INFO  manager.MyListener - WebDriver found element by locator -->By.id: city
+20:40:43.883 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: .pac-item
+20:40:44.184 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: .pac-item
+20:40:44.717 INFO  manager.MyListener - WebDriver start element --> By.id: dates
+20:40:44.735 INFO  manager.MyListener - WebDriver found element by locator -->By.id: dates
+20:40:44.826 INFO  manager.MyListener - WebDriver start element --> By.xpath: //div[text()=' 28 ']
+20:40:44.849 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //div[text()=' 28 ']
+20:40:44.928 INFO  manager.MyListener - WebDriver start element --> By.xpath: //div[text()=' 27 ']
+20:40:44.964 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //div[text()=' 27 ']
+20:40:45.025 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+20:40:45.051 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']
+20:40:45.108 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+20:40:45.130 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']

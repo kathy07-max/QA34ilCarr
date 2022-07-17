@@ -15,6 +15,7 @@ public class AddNewCar extends BaseTests{
     public void preCondition(){
         if(!appManager.getUserHelper().isLogged()){
             appManager.getUserHelper().login(new User().setEmail("katermax07@mail.ru").setPassword("Rr020985$"));
+            logger.info("User: ");
         }
 
     }
@@ -25,7 +26,7 @@ public class AddNewCar extends BaseTests{
         int i =random.nextInt(1000)+1000;
 
         Car car = Car.builder().address("Haifa, Israel").make("BMW").model("M7").year("2019").engine("2.5").fuel("Petrol").gear("AT").wD("AWD").doors("5").seats("4").clasS("C")
-                .fuelConsumption("6.5").carRegNumber("111-334-765").price("65").distanceIncluded("700").features("features").about("very nice car").build();
+                .fuelConsumption("6.5").carRegNumber("111-334"+i+"-765").price("65").distanceIncluded("700").features("features").about("very nice car").build();
 
         appManager.car().openCarForm();
         appManager.car().fillCarForm(car);

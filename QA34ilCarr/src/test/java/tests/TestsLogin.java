@@ -20,10 +20,12 @@ public class TestsLogin extends BaseTests{
     }
     @Test
     public void loginSuccess(){
+        logger.info("Test start with email: 'katermax07@mail.ru' and password: 'Rr020985$'");
         appManager.getUserHelper().openLoginForm();
         appManager.getUserHelper().fillLoginForm("katermax07@mail.ru","Rr020985$");
         appManager.getUserHelper().submit();
         Assert.assertEquals(appManager.getUserHelper().getMessage(),"Logged in");
+        logger.info("Test passed");
     }
     @Test
     public void loginSuccess2(){
