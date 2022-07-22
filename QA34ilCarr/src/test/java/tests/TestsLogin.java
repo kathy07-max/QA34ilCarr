@@ -16,6 +16,7 @@ public class TestsLogin extends BaseTests{
         if(appManager.getUserHelper().isLogged())
         {
             appManager.getUserHelper().logout();
+            logger.info("Test start with logout");
         }
     }
     @Test

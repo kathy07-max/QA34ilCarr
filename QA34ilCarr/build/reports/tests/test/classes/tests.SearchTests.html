@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">6</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.499s</div>
+<div class="counter">12.764s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">83%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,96 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="returnToHome"></a>
+<h3 class="failures">returnToHome</h3>
+<span class="code">
+<pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-aql-c25=&quot;&quot; href=&quot;/&quot; class=&quot;logo&quot;&gt;...&lt;/a&gt; is not clickable at point (220, 34). Other element would receive the click: &lt;button mat-button=&quot;&quot; type=&quot;button&quot; cdkarialive=&quot;polite&quot; class=&quot;mat-focus-indicator mat-calendar-period-button mat-button mat-button-base&quot; aria-label=&quot;Choose month and year&quot;&gt;...&lt;/button&gt;
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-S8MI6IBE', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [32eb2b6d9cd63af376500e0124281612, clickElement {id=7b6711f9-6892-4b0c-adc7-4f229ed9c57f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\97254\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59603}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59603/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (32eb2b6d9cd63af376500e0124281612)] -&gt; css selector: .logo]
+Session ID: 32eb2b6d9cd63af376500e0124281612
+	at app//manager.MyListener.onError(MyListener.java:32)
+	at app//org.openqa.selenium.support.events.EventFiringDecorator.lambda$onError$2(EventFiringDecorator.java:185)
+	at java.base@11.0.15.1/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+	at app//org.openqa.selenium.support.events.EventFiringDecorator.onError(EventFiringDecorator.java:183)
+	at app//org.openqa.selenium.support.decorators.DefaultDecorated.onError(DefaultDecorated.java:58)
+	at app//org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:308)
+	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$gW2B5vYM.click(Unknown Source)
+	at app//manager.HelperBase.click(HelperBase.java:30)
+	at app//manager.HelperSearch.returnToSearch(HelperSearch.java:152)
+	at app//tests.SearchTests.returnToHome(SearchTests.java:48)
+	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.15.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at app//org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+	at app//org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@11.0.15.1/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at app//org.testng.TestRunner.run(TestRunner.java:603)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1092)
+	at app//org.testng.TestNG.run(TestNG.java:1060)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.15.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -78,30 +161,184 @@
 </tr>
 </thead>
 <tr>
+<td class="failures">returnToHome</td>
+<td class="failures">2.124s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">searchAnyPeriod</td>
+<td class="success">3.086s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">searchCurrentMonth</td>
-<td class="success">1.499s</td>
+<td class="success">2.056s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchCurrentYear</td>
+<td class="success">2.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchCurrentYearLocalDate</td>
+<td class="success">2.282s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchZPeriodPast</td>
+<td class="success">1.193s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>20:40:43.713  INFO  tests.BaseTests - Started method with name: public void tests.SearchTests.searchCurrentMonth()
-20:40:43.715  INFO  manager.MyListener - WebDriver start element --&gt; By.id: city
-20:40:43.739  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: city
-20:40:43.883  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: .pac-item
-20:40:44.184  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: .pac-item
-20:40:44.717  INFO  manager.MyListener - WebDriver start element --&gt; By.id: dates
-20:40:44.735  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: dates
-20:40:44.826  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //div[text()=' 28 ']
-20:40:44.849  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //div[text()=' 28 ']
-20:40:44.928  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //div[text()=' 27 ']
-20:40:44.964  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //div[text()=' 27 ']
-20:40:45.025  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@type='submit']
-20:40:45.051  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@type='submit']
-20:40:45.108  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@type='submit']
-20:40:45.130  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@type='submit']
+<pre>16:04:00.814  INFO  tests.BaseTests - Started method with name: public void tests.SearchTests.searchAnyPeriod()
+16:04:00.815  INFO  manager.MyListener - WebDriver start element --&gt; By.id: city
+16:04:00.839  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: city
+16:04:01.456  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: .pac-item
+16:04:01.478  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: .pac-item
+16:04:01.526  INFO  manager.MyListener - WebDriver start element --&gt; By.id: city
+16:04:01.541  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: city
+16:04:01.579  INFO  manager.MyListener - WebDriver start element --&gt; By.id: dates
+16:04:01.601  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: dates
+16:04:01.629  INFO  manager.MyListener - WebDriver start element --&gt; By.id: dates
+16:04:01.647  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: dates
+16:04:01.730  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:01.753  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:01.827  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:01.849  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:01.895  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:01.911  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:01.952  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:01.968  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:01.999  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:02.015  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:02.051  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:02.070  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:02.116  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //div[text() = ' 10 ']
+16:04:02.136  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //div[text() = ' 10 ']
+16:04:02.191  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:02.207  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:02.242  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:02.259  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:02.292  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:02.306  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:02.339  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //div[text() = ' 20 ']
+16:04:02.357  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //div[text() = ' 20 ']
+16:04:02.403  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@type='submit']
+16:04:02.422  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@type='submit']
+16:04:02.459  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@type='submit']
+16:04:02.475  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@type='submit']
+16:04:04.914  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: .logo
+16:04:04.930  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: .logo
+16:04:05.151  INFO  tests.BaseTests - Started method with name: public void tests.SearchTests.searchCurrentMonth()
+16:04:05.152  INFO  manager.MyListener - WebDriver start element --&gt; By.id: city
+16:04:05.176  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: city
+16:04:05.837  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: .pac-item
+16:04:05.849  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: .pac-item
+16:04:05.878  INFO  manager.MyListener - WebDriver start element --&gt; By.id: city
+16:04:05.893  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: city
+16:04:05.924  INFO  manager.MyListener - WebDriver start element --&gt; By.id: dates
+16:04:05.943  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: dates
+16:04:05.970  INFO  manager.MyListener - WebDriver start element --&gt; By.id: dates
+16:04:05.982  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: dates
+16:04:06.042  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //div[text()=' 28 ']
+16:04:06.061  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //div[text()=' 28 ']
+16:04:06.114  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //div[text()=' 27 ']
+16:04:06.131  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //div[text()=' 27 ']
+16:04:06.179  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@type='submit']
+16:04:06.192  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@type='submit']
+16:04:06.215  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@type='submit']
+16:04:06.228  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@type='submit']
+https://ilcarro-1578153671498.web.app/search/results?city=Tel%20Aviv-Yafo&amp;startDate=2022-07-27%2000:00&amp;endDate=2022-07-28%2000:00
+16:04:08.218  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: .logo
+16:04:08.233  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: .logo
+16:04:08.372  INFO  tests.BaseTests - Started method with name: public void tests.SearchTests.searchCurrentYear()
+16:04:08.372  INFO  manager.MyListener - WebDriver start element --&gt; By.id: city
+16:04:08.392  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: city
+16:04:09.027  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: .pac-item
+16:04:09.067  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: .pac-item
+16:04:09.104  INFO  manager.MyListener - WebDriver start element --&gt; By.id: city
+16:04:09.116  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: city
+16:04:09.154  INFO  manager.MyListener - WebDriver start element --&gt; By.id: dates
+16:04:09.169  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: dates
+16:04:09.192  INFO  manager.MyListener - WebDriver start element --&gt; By.id: dates
+16:04:09.207  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: dates
+16:04:09.256  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:09.272  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:09.315  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //div[text()=' 10 ']
+16:04:09.333  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //div[text()=' 10 ']
+16:04:09.379  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:09.393  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:09.438  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:09.452  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:09.490  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //div[text()=' 20 ']
+16:04:09.511  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //div[text()=' 20 ']
+16:04:09.554  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@type='submit']
+16:04:09.568  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@type='submit']
+16:04:09.589  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@type='submit']
+16:04:09.603  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@type='submit']
+https://ilcarro-1578153671498.web.app/search/results?city=Haifa&amp;startDate=2022-08-10%2000:00&amp;endDate=2022-10-20%2000:00
+16:04:11.408  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: .logo
+16:04:11.422  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: .logo
+16:04:11.579  INFO  tests.BaseTests - Started method with name: public void tests.SearchTests.searchCurrentYearLocalDate()
+16:04:11.580  INFO  manager.MyListener - WebDriver start element --&gt; By.id: city
+16:04:11.599  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: city
+16:04:12.219  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: .pac-item
+16:04:12.261  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: .pac-item
+16:04:12.297  INFO  manager.MyListener - WebDriver start element --&gt; By.id: city
+16:04:12.320  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: city
+16:04:12.355  INFO  manager.MyListener - WebDriver start element --&gt; By.id: dates
+16:04:12.368  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: dates
+16:04:12.390  INFO  manager.MyListener - WebDriver start element --&gt; By.id: dates
+16:04:12.402  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: dates
+16:04:12.452  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:12.465  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:12.506  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //div[text()=' 10 ']
+16:04:12.519  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //div[text()=' 10 ']
+16:04:12.560  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:12.572  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:12.613  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@aria-label='Next month']
+16:04:12.625  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@aria-label='Next month']
+16:04:12.662  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //div[text()=' 20 ']
+16:04:12.673  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //div[text()=' 20 ']
+16:04:12.726  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@type='submit']
+16:04:12.739  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@type='submit']
+16:04:12.766  INFO  manager.MyListener - WebDriver start element --&gt; By.xpath: //button[@type='submit']
+16:04:12.777  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.xpath: //button[@type='submit']
+https://ilcarro-1578153671498.web.app/search/results?city=Haifa&amp;startDate=2022-08-10%2000:00&amp;endDate=2022-10-20%2000:00
+16:04:14.865  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: .logo
+16:04:14.879  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: .logo
+16:04:15.067  INFO  tests.BaseTests - Started method with name: public void tests.SearchTests.searchZPeriodPast()
+16:04:15.068  INFO  manager.MyListener - WebDriver start element --&gt; By.id: city
+16:04:15.081  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: city
+16:04:15.730  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: .pac-item
+16:04:15.907  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: .pac-item
+16:04:15.951  INFO  manager.MyListener - WebDriver start element --&gt; By.id: city
+16:04:15.962  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: city
+16:04:15.989  INFO  manager.MyListener - WebDriver start element --&gt; By.id: dates
+16:04:16.000  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: dates
+16:04:16.022  INFO  manager.MyListener - WebDriver start element --&gt; By.id: dates
+16:04:16.036  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.id: dates
+16:04:16.177  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: div[class='ng-star-inserted']
+16:04:16.197  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: div[class='ng-star-inserted']
+16:04:16.233  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: [type=submit]
+16:04:16.251  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: [type=submit]
+16:04:17.268  INFO  manager.MyListener - WebDriver start element --&gt; By.cssSelector: .logo
+16:04:17.279  INFO  manager.MyListener - WebDriver found element by locator --&gt;By.cssSelector: .logo
+16:04:18.378  INFO  manager.MyListener - The name of method with error: click
+16:04:18.383  INFO  manager.MyListener - We have a problem: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-aql-c25=&quot;&quot; href=&quot;/&quot; class=&quot;logo&quot;&gt;...&lt;/a&gt; is not clickable at point (220, 34). Other element would receive the click: &lt;button mat-button=&quot;&quot; type=&quot;button&quot; cdkarialive=&quot;polite&quot; class=&quot;mat-focus-indicator mat-calendar-period-button mat-button mat-button-base&quot; aria-label=&quot;Choose month and year&quot;&gt;...&lt;/button&gt;
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'LAPTOP-S8MI6IBE', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [32eb2b6d9cd63af376500e0124281612, clickElement {id=7b6711f9-6892-4b0c-adc7-4f229ed9c57f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\97254\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59603}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59603/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (32eb2b6d9cd63af376500e0124281612)] -&gt; css selector: .logo]
+Session ID: 32eb2b6d9cd63af376500e0124281612
 </pre>
 </span>
 </div>
@@ -113,7 +350,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at Jul 17, 2022, 8:40:45 PM</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at Jul 22, 2022, 4:04:18 PM</p>
 </div>
 </div>
 </body>

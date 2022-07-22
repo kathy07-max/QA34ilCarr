@@ -1,0 +1,15 @@
+15:28:07.580 INFO  manager.ApplicationManager - All tests run in chrome browser
+15:28:09.563 INFO  manager.ApplicationManager - Current Url___>https://ilcarro-1578153671498.web.app/search
+15:28:09.602 INFO  tests.BaseTests - Started method with name: public void tests.SearchTests.searchPeriodPast()
+15:28:09.605 INFO  manager.MyListener - WebDriver start element --> By.id: city
+15:28:09.638 INFO  manager.MyListener - WebDriver found element by locator -->By.id: city
+15:28:10.258 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: .pac-item
+15:28:10.279 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: .pac-item
+15:28:10.314 INFO  manager.MyListener - WebDriver start element --> By.id: city
+15:28:10.328 INFO  manager.MyListener - WebDriver found element by locator -->By.id: city
+15:28:10.365 INFO  manager.MyListener - WebDriver start element --> By.id: dates
+15:28:10.385 INFO  manager.MyListener - WebDriver found element by locator -->By.id: dates
+15:28:10.411 INFO  manager.MyListener - WebDriver start element --> By.id: dates
+15:28:10.428 INFO  manager.MyListener - WebDriver found element by locator -->By.id: dates
+15:28:11.437 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: .logo
+15:28:11.469 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: .logo

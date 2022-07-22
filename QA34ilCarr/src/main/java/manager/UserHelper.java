@@ -76,7 +76,7 @@ public class UserHelper extends HelperBase {
         pause(2000);
         new WebDriverWait(wd,Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector("div.dialog-container"))));
         String message = wd.findElement(By.cssSelector("div.dialog-container h1")).getText();
-        logger.info("Message is: "+ message);
+        logger.info("We get the 'message': "+ message);
         return message;
     }
 
