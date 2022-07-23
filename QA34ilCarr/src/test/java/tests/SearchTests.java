@@ -13,7 +13,7 @@ public class SearchTests extends BaseTests {
         Assert.assertTrue(appManager.search().isPageResultAppeared());
     }
     @Test
-    public void searchZPeriodPast(){
+    public void searchPeriodPast(){
         appManager.search().searchPeriodInPast("Tel-Aviv","5/4/2022-5/10/2022");
         Assert.assertTrue(appManager.search().isErrorDatesDisplayed());
         Assert.assertTrue(appManager.getUserHelper().isYallaButtoNotActive());
@@ -44,7 +44,7 @@ public class SearchTests extends BaseTests {
     }
 
     @AfterMethod
-    public void returnToHome() {
+    public void returnToSearch() {
         appManager.search().returnToSearch();
     }
 }

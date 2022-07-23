@@ -109,6 +109,12 @@ public class HelperSearch extends HelperBase{
         wd.findElement(By.id("dates")).sendKeys(Keys.DELETE);
         click(By.id("dates"));
     }
+    private void clearDates2() {
+
+        wd.findElement(By.id("city")).sendKeys(Keys.TAB);
+        wd.findElement(By.id("dates")).sendKeys(Keys.DELETE);
+        click(By.id("dates"));
+    }
     public void searchPeriodInPast(String city, String data){
         typeCity(city);
         wd.findElement(By.id("city")).sendKeys(Keys.TAB);
@@ -149,7 +155,7 @@ public class HelperSearch extends HelperBase{
 
     public void returnToSearch() {
         pause(1000);
-        click(By.cssSelector(".logo"));
+        click(By.id("0"));
     }
 
     public boolean isErrorDatesDisplayed() {
