@@ -1,0 +1,67 @@
+14:04:27.450 INFO  manager.ApplicationManager - All tests run in chrome browser
+14:04:29.257 INFO  manager.ApplicationManager - Current Url___>https://ilcarro-1578153671498.web.app/search
+14:04:29.284 INFO  tests.BaseTests - Started method with name: public void tests.RegistrationTests.registrationSuccess2(models.User)
+14:04:34.309 INFO  manager.MyListener - WebDriver start element --> By.xpath: //a[text()=' Sign up ']
+14:04:34.339 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //a[text()=' Sign up ']
+14:04:34.421 INFO  manager.MyListener - WebDriver start element --> By.id: name
+14:04:34.448 INFO  manager.MyListener - WebDriver found element by locator -->By.id: name
+14:04:34.576 INFO  manager.MyListener - WebDriver start element --> By.id: lastName
+14:04:34.603 INFO  manager.MyListener - WebDriver found element by locator -->By.id: lastName
+14:04:34.695 INFO  manager.MyListener - WebDriver start element --> By.id: email
+14:04:34.718 INFO  manager.MyListener - WebDriver found element by locator -->By.id: email
+14:04:34.831 INFO  manager.MyListener - WebDriver start element --> By.id: password
+14:04:34.853 INFO  manager.MyListener - WebDriver found element by locator -->By.id: password
+14:04:34.946 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: label[for='terms-of-use']
+14:04:34.967 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: label[for='terms-of-use']
+14:04:35.117 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+14:04:35.142 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']
+14:04:35.186 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+14:04:35.203 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']
+14:04:37.242 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: div.dialog-container
+14:04:37.277 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: div.dialog-container
+14:04:37.292 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: div.dialog-container h1
+14:04:37.307 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: div.dialog-container h1
+14:04:37.322 INFO  manager.HelperBase - We get the 'message': Registered
+14:04:37.337 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[text()='Ok']
+14:04:37.352 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[text()='Ok']
+14:04:37.383 INFO  tests.BaseTests - Started method with name: public void tests.RegistrationTests.registrationSuccess2(models.User)
+14:04:37.401 INFO  manager.MyListener - WebDriver start element --> By.xpath: //a[text()=' Logout ']
+14:04:37.419 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //a[text()=' Logout ']
+14:04:37.535 INFO  manager.MyListener - WebDriver start element --> By.xpath: //a[text()=' Sign up ']
+14:04:37.554 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //a[text()=' Sign up ']
+14:04:37.599 INFO  manager.MyListener - WebDriver start element --> By.id: name
+14:04:37.617 INFO  manager.MyListener - WebDriver found element by locator -->By.id: name
+14:04:37.726 INFO  manager.MyListener - WebDriver start element --> By.id: lastName
+14:04:37.738 INFO  manager.MyListener - WebDriver found element by locator -->By.id: lastName
+14:04:37.836 INFO  manager.MyListener - WebDriver start element --> By.id: email
+14:04:37.852 INFO  manager.MyListener - WebDriver found element by locator -->By.id: email
+14:04:37.968 INFO  manager.MyListener - WebDriver start element --> By.id: password
+14:04:37.982 INFO  manager.MyListener - WebDriver found element by locator -->By.id: password
+14:04:38.074 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: label[for='terms-of-use']
+14:04:38.088 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: label[for='terms-of-use']
+14:04:38.237 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+14:04:38.251 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']
+14:04:38.275 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+14:04:38.290 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']
+14:04:40.338 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: div.dialog-container
+14:04:40.353 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: div.dialog-container
+14:04:40.363 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: div.dialog-container h1
+14:04:40.374 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: div.dialog-container h1
+14:04:40.386 INFO  manager.HelperBase - We get the 'message': Registration error
+14:04:40.402 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[text()='Ok']
+14:04:40.417 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[text()='Ok']
+14:04:40.449 INFO  tests.BaseTests - Started method with name: public void tests.RegistrationTests.registrationSuccess2(models.User)
+14:04:45.492 INFO  manager.MyListener - WebDriver start element --> By.xpath: //a[text()=' Sign up ']
+14:04:45.517 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //a[text()=' Sign up ']
+14:04:45.549 INFO  manager.MyListener - WebDriver start element --> By.id: name
+14:04:45.564 INFO  manager.MyListener - WebDriver found element by locator -->By.id: name
+14:04:45.647 INFO  manager.MyListener - WebDriver start element --> By.id: lastName
+14:04:45.660 INFO  manager.MyListener - WebDriver found element by locator -->By.id: lastName
+14:04:45.739 INFO  manager.MyListener - WebDriver start element --> By.id: email
+14:04:45.752 INFO  manager.MyListener - WebDriver found element by locator -->By.id: email
+14:04:45.843 INFO  manager.MyListener - WebDriver start element --> By.id: password
+14:04:45.859 INFO  manager.MyListener - WebDriver found element by locator -->By.id: password
+14:04:45.961 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: label[for='terms-of-use']
+14:04:45.978 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: label[for='terms-of-use']
+14:04:46.127 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+14:04:46.147 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']

@@ -20,8 +20,9 @@ public class ApplicationManager {
     HelperSearch search;
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
     public void init(){
-       // wd=new ChromeDriver();
-        wd = new EdgeDriver();
+        wd=new ChromeDriver();
+       // wd = new EdgeDriver();
+       // wd =new FirefoxDriver();
         WebDriverListener listener = new MyListener();
         wd = new EventFiringDecorator(listener).decorate(wd);
         logger.info("All tests run in chrome browser");

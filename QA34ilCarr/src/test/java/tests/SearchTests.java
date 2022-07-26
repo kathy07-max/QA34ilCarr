@@ -2,9 +2,14 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class SearchTests extends BaseTests {
+    @BeforeMethod
+    public void openSearchForm(){
+        appManager.search().openSearchForm();
+    }
     @Test
     public void searchCurrentMonth(){
         appManager.search().searchCurrentMonth("Tel Aviv", "7/28/2022", "7/27/2022");
@@ -14,10 +19,9 @@ public class SearchTests extends BaseTests {
     }
     @Test
     public void searchPeriodPast(){
-        appManager.search().searchPeriodInPast("Tel-Aviv","5/4/2022-5/10/2022");
-        Assert.assertTrue(appManager.search().isErrorDatesDisplayed());
-        Assert.assertTrue(appManager.getUserHelper().isYallaButtoNotActive());
-
+        appManager.search().searchPeriodInPast("Tel-Aviv","5/4/2022","5/10/2022");
+        Assert.assertTrue(appManager.search().isPeriodInPast());
+        Assert.assertTrue(appManager.search().isYallaButtoNotActive());
     }
 
     @Test

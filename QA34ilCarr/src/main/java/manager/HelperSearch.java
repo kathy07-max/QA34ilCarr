@@ -3,6 +3,7 @@ package manager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -87,7 +88,7 @@ public class HelperSearch extends HelperBase{
         LocalDate now = LocalDate.now();
         LocalDate from = LocalDate.parse(dataFrom, DateTimeFormatter.ofPattern("M/d/yyyy"));
         LocalDate to = LocalDate.parse(dataTo,DateTimeFormatter.ofPattern("M/d/yyyy"));
-        clearDates();
+        clearDates2();
 
         if(now.getMonthValue()!=from.getMonthValue()){
             int count = from.getMonthValue()-now.getMonthValue();
@@ -110,16 +111,22 @@ public class HelperSearch extends HelperBase{
         click(By.id("dates"));
     }
     private void clearDates2() {
-
-        wd.findElement(By.id("city")).sendKeys(Keys.TAB);
-        wd.findElement(By.id("dates")).sendKeys(Keys.DELETE);
+        WebElement elem =  wd.findElement(By.id("dates"));
+        String osName = System.getProperty("os.name");
+        if(osName.startsWith("Mac")){
+            elem.sendKeys(Keys.COMMAND,"a");
+        }else {
+            elem.sendKeys(Keys.CONTROL,"a");
+        }
+        elem.sendKeys(Keys.DELETE);
         click(By.id("dates"));
     }
-    public void searchPeriodInPast(String city, String data){
+    public void searchPeriodInPast(String city, String dataFrom, String dataTo){
         typeCity(city);
         wd.findElement(By.id("city")).sendKeys(Keys.TAB);
         wd.findElement(By.id("dates")).sendKeys(Keys.DELETE);
-        type(By.id("dates"),data);
+        type(By.id("dates"),dataFrom + " - " + dataTo);
+        click(By.cssSelector(".cdk-overlay-container"));
     }
 
     public void searchAnyPeriodLocalDate(String city, String dataFrom, String dataTo) {
@@ -158,9 +165,13 @@ public class HelperSearch extends HelperBase{
         click(By.id("0"));
     }
 
-    public boolean isErrorDatesDisplayed() {
+    public boolean isPeriodInPast() {
         return new WebDriverWait(wd, Duration.ofSeconds(5))
                 .until(ExpectedConditions
                         .textToBePresentInElement(wd.findElement(By.cssSelector("div[class='ng-star-inserted']")),"You can't pick date before today"));
+    }
+
+    public void openSearchForm() {
+        click(By.id("0"));
     }
 }

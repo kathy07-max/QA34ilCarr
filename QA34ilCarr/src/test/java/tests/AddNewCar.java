@@ -1,5 +1,6 @@
 package tests;
 
+import manager.MyDataProvider;
 import models.Car;
 import models.User;
 import org.testng.Assert;
@@ -34,6 +35,16 @@ public class AddNewCar extends BaseTests{
         appManager.car().submit();
         Assert.assertEquals(appManager.car().getMessage(), "Car added");
     }
+
+    @Test(dataProvider = "addedCarCSV",dataProviderClass = MyDataProvider.class)
+    public void addCarSuccessCSV(Car car){
+        appManager.car().openCarForm();
+        appManager.car().fillCarForm(car);
+        appManager.car().attachPhoto("C:\\Users\\97254\\DocQA34\\GitHub\\QA34ilCarr\\QA34ilCarr\\auto1.jpeg");
+        appManager.car().submit();
+        Assert.assertEquals(appManager.car().getMessage(), "Car added");
+    }
+
 
     @AfterMethod
     public void postCondition(){

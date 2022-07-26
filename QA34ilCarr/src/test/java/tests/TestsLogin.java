@@ -1,13 +1,10 @@
 package tests;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import manager.MyDataProvider;
+import models.User;
 
-import java.time.Duration;
+import org.testng.Assert;
+import org.testng.annotations.*;
 
 public class TestsLogin extends BaseTests{
 
@@ -19,11 +16,20 @@ public class TestsLogin extends BaseTests{
             logger.info("Test start with logout");
         }
     }
-    @Test
-    public void loginSuccess(){
-        logger.info("Test start with email: 'katermax07@mail.ru' and password: 'Rr020985$'");
+    @Test(dataProvider = "dataLogin",dataProviderClass = MyDataProvider.class)
+    public void loginSuccess(String email, String password){
+        logger.info("Test start with email: "+email+" and password:"+password);
         appManager.getUserHelper().openLoginForm();
-        appManager.getUserHelper().fillLoginForm("katermax07@mail.ru","Rr020985$");
+        appManager.getUserHelper().fillLoginForm(email,password);
+        appManager.getUserHelper().submit();
+        Assert.assertEquals(appManager.getUserHelper().getMessage(),"Logged in");
+        logger.info("Test passed");
+    }
+    @Test(dataProvider = "loginCSV",dataProviderClass = MyDataProvider.class)
+    public void loginSuccessDP(User user){
+        logger.info("Test start with email: "+user.getEmail()+" and password:"+user.getPassword());
+        appManager.getUserHelper().openLoginForm();
+        appManager.getUserHelper().fillLoginForm(user);
         appManager.getUserHelper().submit();
         Assert.assertEquals(appManager.getUserHelper().getMessage(),"Logged in");
         logger.info("Test passed");
@@ -39,4 +45,7 @@ public class TestsLogin extends BaseTests{
     public void postCondition(){
     appManager.getUserHelper().clickOk();
 }
+
+
 }
+

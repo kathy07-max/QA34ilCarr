@@ -1,0 +1,86 @@
+14:02:41.506 INFO  manager.ApplicationManager - All tests run in chrome browser
+14:02:44.581 INFO  manager.ApplicationManager - Current Url___>https://ilcarro-1578153671498.web.app/search
+14:02:44.610 INFO  tests.BaseTests - Started method with name: public void tests.RegistrationTests.registrationSuccess2(models.User)
+14:02:49.665 INFO  manager.MyListener - WebDriver start element --> By.xpath: //a[text()=' Sign up ']
+14:02:49.689 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //a[text()=' Sign up ']
+14:02:49.741 INFO  manager.MyListener - WebDriver start element --> By.id: name
+14:02:49.764 INFO  manager.MyListener - WebDriver found element by locator -->By.id: name
+14:02:49.863 INFO  manager.MyListener - WebDriver start element --> By.id: lastName
+14:02:49.882 INFO  manager.MyListener - WebDriver found element by locator -->By.id: lastName
+14:02:49.978 INFO  manager.MyListener - WebDriver start element --> By.id: email
+14:02:49.998 INFO  manager.MyListener - WebDriver found element by locator -->By.id: email
+14:02:50.124 INFO  manager.MyListener - WebDriver start element --> By.id: password
+14:02:50.147 INFO  manager.MyListener - WebDriver found element by locator -->By.id: password
+14:02:50.257 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: label[for='terms-of-use']
+14:02:50.279 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: label[for='terms-of-use']
+14:02:50.438 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+14:02:50.456 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']
+14:02:50.496 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+14:02:50.511 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']
+14:02:52.550 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: div.dialog-container
+14:02:52.585 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: div.dialog-container
+14:02:52.601 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: div.dialog-container h1
+14:02:52.620 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: div.dialog-container h1
+14:02:52.630 INFO  manager.HelperBase - We get the 'message': Registered
+14:02:52.652 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[text()='Ok']
+14:02:52.667 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[text()='Ok']
+14:02:52.695 INFO  tests.BaseTests - Started method with name: public void tests.RegistrationTests.registrationSuccess2(models.User)
+14:02:52.710 INFO  manager.MyListener - WebDriver start element --> By.xpath: //a[text()=' Logout ']
+14:02:52.726 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //a[text()=' Logout ']
+14:02:52.843 INFO  manager.MyListener - WebDriver start element --> By.xpath: //a[text()=' Sign up ']
+14:02:52.859 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //a[text()=' Sign up ']
+14:02:52.905 INFO  manager.MyListener - WebDriver start element --> By.id: name
+14:02:52.927 INFO  manager.MyListener - WebDriver found element by locator -->By.id: name
+14:02:53.077 INFO  manager.MyListener - WebDriver start element --> By.id: lastName
+14:02:53.097 INFO  manager.MyListener - WebDriver found element by locator -->By.id: lastName
+14:02:53.195 INFO  manager.MyListener - WebDriver start element --> By.id: email
+14:02:53.210 INFO  manager.MyListener - WebDriver found element by locator -->By.id: email
+14:02:53.311 INFO  manager.MyListener - WebDriver start element --> By.id: password
+14:02:53.324 INFO  manager.MyListener - WebDriver found element by locator -->By.id: password
+14:02:53.417 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: label[for='terms-of-use']
+14:02:53.430 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: label[for='terms-of-use']
+14:02:53.604 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+14:02:53.625 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']
+14:02:53.653 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+14:02:53.667 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']
+14:02:55.700 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: div.dialog-container
+14:02:55.745 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: div.dialog-container
+14:02:55.760 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: div.dialog-container h1
+14:02:55.771 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: div.dialog-container h1
+14:02:55.784 INFO  manager.HelperBase - We get the 'message': Registration error
+14:02:55.799 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[text()='Ok']
+14:02:55.814 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[text()='Ok']
+14:02:55.846 INFO  tests.BaseTests - Started method with name: public void tests.RegistrationTests.registrationSuccess2(models.User)
+14:03:00.855 INFO  manager.MyListener - WebDriver start element --> By.xpath: //a[text()=' Sign up ']
+14:03:00.874 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //a[text()=' Sign up ']
+14:03:00.903 INFO  manager.MyListener - WebDriver start element --> By.id: name
+14:03:00.917 INFO  manager.MyListener - WebDriver found element by locator -->By.id: name
+14:03:01.005 INFO  manager.MyListener - WebDriver start element --> By.id: lastName
+14:03:01.020 INFO  manager.MyListener - WebDriver found element by locator -->By.id: lastName
+14:03:01.101 INFO  manager.MyListener - WebDriver start element --> By.id: email
+14:03:01.114 INFO  manager.MyListener - WebDriver found element by locator -->By.id: email
+14:03:01.204 INFO  manager.MyListener - WebDriver start element --> By.id: password
+14:03:01.216 INFO  manager.MyListener - WebDriver found element by locator -->By.id: password
+14:03:01.303 INFO  manager.MyListener - WebDriver start element --> By.cssSelector: label[for='terms-of-use']
+14:03:01.320 INFO  manager.MyListener - WebDriver found element by locator -->By.cssSelector: label[for='terms-of-use']
+14:03:01.469 INFO  manager.MyListener - WebDriver start element --> By.xpath: //button[@type='submit']
+14:03:01.488 INFO  manager.MyListener - WebDriver found element by locator -->By.xpath: //button[@type='submit']
+14:03:17.350 INFO  manager.MyListener - The name of method with error: isDisplayed
+14:03:17.355 INFO  manager.MyListener - We have a problem: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-S8MI6IBE', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [656b3ca766bbf0aee20a37364735a765, isElementDisplayed {id=6a91310c-502c-47e3-a1c6-b00bf48de091}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\97254\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61172/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (656b3ca766bbf0aee20a37364735a765)] -> xpath: //button[@type='submit']]
+Session ID: 656b3ca766bbf0aee20a37364735a765
+14:03:29.475 INFO  manager.MyListener - The name of method with error: findElements
+14:03:29.475 INFO  manager.MyListener - We have a problem: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-S8MI6IBE', ip: '192.168.1.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [656b3ca766bbf0aee20a37364735a765, findElements {using=xpath, value=//button[text()='Ok']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\97254\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61172/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 656b3ca766bbf0aee20a37364735a765
